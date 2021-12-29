@@ -1,0 +1,47 @@
+body{
+    background-color: teal;
+    text-align: center;
+
+}
+
+.container {
+    display: inline-block;
+
+}
+
+.cell {
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+
+.grid{
+    width: 70vw;
+    height: 55vh;
+  
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+   
+}
+
+
+@media (min-width:800px) {
+    .grid{
+        width: 35vw;
+        height: 70vh;
+      
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 0 auto;
+       
+    }
+
+}
